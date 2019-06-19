@@ -1,0 +1,35 @@
+$color: (
+  0: #3364d0,
+  1: #5020dd,
+  2: #f1557e,
+  3: #b5549a,
+  4: #535353
+);
+
+@mixin gradient_dark() {
+  background: map-get($color, 0);
+  background: -webkit-linear-gradient(
+    to bottom right,
+    map-get($color, 0),
+    map-get($color, 1)
+  );
+  background: linear-gradient(
+    to bottom right,
+    map-get($color, 0),
+    map-get($color, 1)
+  );
+}
+
+@mixin gradient_light() {
+  background: map-get($color, 2);
+  background: -webkit-linear-gradient(
+    to bottom right,
+    map-get($color, 2),
+    map-get($color, 3)
+  );
+  background: linear-gradient(
+    to bottom right,
+    map-get($color, 2),
+    map-get($color, 3)
+  );
+}
