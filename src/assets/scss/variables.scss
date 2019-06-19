@@ -6,6 +6,8 @@ $color: (
   4: #535353
 );
 
+$tokens: ethereum bitcoin ripple litecoin zcash;
+
 @mixin gradient_dark() {
   background: map-get($color, 0);
   background: -webkit-linear-gradient(
@@ -32,4 +34,8 @@ $color: (
     map-get($color, 2),
     map-get($color, 3)
   );
+}
+
+@function cryptoicon($name) {
+  @return url('../assets/images/#{$name}.svg');
 }

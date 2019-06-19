@@ -31,7 +31,7 @@ html {
   height: 100%;
   width: 100%;
 }
-body {
+* {
   font-family: "Roboto", sans-serif;
 }
 
@@ -41,7 +41,6 @@ body {
   height: 100%;
   width: 100%;
   grid-template-columns: 300px 1fr;
-  border: 2px solid #ededed;
   section {
     &.content {
       section.content {

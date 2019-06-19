@@ -46,7 +46,27 @@ export default new Router({
       }
     },
     {
+      path: '/transfer/:token',
+      name: 'transfer',
+      component: transfer,
+      meta: {
+        breadcrumb: {
+          name: 'Transfer'
+        }
+      }
+    },
+    {
       path: '/topup',
+      name: 'topup',
+      component: topup,
+      meta: {
+        breadcrumb: {
+          name: 'Topup'
+        }
+      }
+    },
+    {
+      path: '/topup/:token',
       name: 'topup',
       component: topup,
       meta: {
