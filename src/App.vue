@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Navigation from "./components/navigation";
-import Panel from "./components/panel";
+import Navigation from "./components/navigation/navigation";
+import Panel from "./components/panel/panel";
 
 export default {
   components: {

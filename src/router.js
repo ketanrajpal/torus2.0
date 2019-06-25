@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import dashboard from './views/dashboard.vue';
-import tokens from './views/tokens.vue';
-import transfer from './views/transfer.vue';
-import topup from './views/topup.vue';
-import contacts from './views/contacts.vue';
-import transactions from './views/transactions.vue';
-import settings from './views/settings.vue';
+import dashboard from './views/dashboard/dashboard.vue';
+import tokens from './views/tokens/tokens.vue';
+import transfer from './views/transfer/transfer.vue';
+import topup from './views/topup/topup.vue';
+import contacts from './views/contacts/contacts.vue';
+import transactions from './views/transactions/transactions.vue';
+import settings from './views/settings/settings.vue';
 
 Vue.use(Router);
 

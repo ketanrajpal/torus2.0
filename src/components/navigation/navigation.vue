@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <header>
-      <img src="../assets/images/logo.svg">
+      <img src="../../assets/images/logo.svg">
     </header>
     <nav>
       <ul>
@@ -69,67 +69,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variables.scss";
-.navigation {
-  @include gradient_dark();
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  letter-spacing: 1px;
-  header {
-    box-sizing: border-box;
-    text-align: center;
-    padding: 30px 0;
-    img {
-      width: 100px;
-    }
-  }
-  nav {
-    align-self: center;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 400;
-    ul {
-      margin-left: 15%;
-      li {
-        a {
-          text-decoration: none;
-          color: #ffffff;
-          display: block;
-          line-height: 18px;
-          padding: 20px 30px;
-          border-radius: 30px 0 0 30px;
-          svg {
-            opacity: 0.5;
-            margin-right: 18px;
-            font-size: 18px;
-            line-height: 18px;
-          }
-          &.current,
-          &.router-link-exact-active {
-            background-color: map-get($color, 2) !important;
-          }
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-          }
-        }
-      }
-    }
-  }
-  footer {
-    box-sizing: border-box;
-    padding: 20px 30px;
-    font-size: 13px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 150%;
-    a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-  }
-}
+@import "navigation";
 </style>

@@ -37,5 +37,5 @@ $tokens: ethereum bitcoin ripple litecoin zcash;
 }
 
 @function cryptoicon($name) {
-  @return url('../assets/images/#{$name}.svg');
+  @return url('../../assets/images/#{$name}.svg');
 }
